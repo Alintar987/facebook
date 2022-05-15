@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrusell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,10 +71,8 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git 
-	zsh-interactive-cd
 	fast-syntax-highlighting
 	zsh-autosuggestions
-	web-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -108,14 +106,14 @@ source $ZSH/oh-my-zsh.sh
 clear
 neofetch
 alias cls='clear && echo && ls && echo'
+alias cla='clear && echo && ls && echo'
 alias c='clear'
-alias paginas='echo "-->  google  yahoo  github  youtube  bing  wiki  map  image"'
-alias comandos='echo paginas vim'
+
 alias activate='source venv/bin/activate'
 alias py='python3.10'
-alias token='echo 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'
+
 alias actualizar='sudo apt-get update && sudo apt-get upgrade'
-alias vim='nvim'
+
 alias buscar_palabra='echo && grep -inC 1'
 alias crear_requerimientos='pip freeze > requirements.txt'
 
